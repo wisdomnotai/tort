@@ -4,10 +4,16 @@ todos =  []
 id_counter = 0
 
 #create task
-def create_task(user_input):
-    if user_input == "1":
-        user_input
-
+def add_task(title: str):
+    global id_counter
+    task =  {
+        "id":id_counter,
+        "title":title,
+        "completed":False
+    }
+    todos.append(task)
+    id_counter += 1
+    return task
 #view all tasks
 
 #view tasks by id
