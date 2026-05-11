@@ -1,4 +1,12 @@
+#creating the array for temproray memory
+todos =  []
+#initalizing id to 0
+id_counter = 0
+
 #create task
+def create_task(user_input):
+    if user_input == "1":
+        user_input
 
 #view all tasks
 
