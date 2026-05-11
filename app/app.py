@@ -16,3 +16,9 @@ def create_task():
     """creating new task"""
     return main.add_task()
 
+@app.get("/tasks/retrieve")
+def get_task():
+    """viewing all tasks"""
+    return main.view_all_tasks
+
+
