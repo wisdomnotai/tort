@@ -15,6 +15,8 @@ def add_task(title: str):
     id_counter += 1
     return task
 #view all tasks
+def view_all_tasks():
+    return todos
 
 #view tasks by id
 
