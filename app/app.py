@@ -28,4 +28,9 @@ def update_task(task_id: int):
     if not task:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail = f"{task_id} not found")
     return task
-
+@app.delete("/task/delete/{task_id}")
+def delete_task(task_id:int):
+    task = main.delete_task(task_id)
+    if not task:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail = f"{task_id} not found")
+    return {"message":"task deleted"}
