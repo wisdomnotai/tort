@@ -19,6 +19,11 @@ def view_all_tasks():
     return todos
 
 #view tasks by id
+def completed_tasks(task_id: int):
+    for task in todos:
+        if task["id"] == task_id:
+            task["completed"] == True
+            return task
 
 #update task
 
