@@ -24,18 +24,15 @@ def completed_tasks(task_id: int):
         if task["id"] == task_id:
             task["completed"] == True
             return task
-
-#update task
+    return None
 
 #delete task
-
-#mark task as complete
-
-#mark task as incomplete
-
-#view all incomplete tasks
-
-#view all complete task
+def delete_task(task_id: int):
+    for task in todos:
+        if task["id"] == task_id:
+            todos.remove(task)
+            return todos
+        return None 
 
 while True:
     print("==========================")
